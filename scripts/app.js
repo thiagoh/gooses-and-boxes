@@ -1,4 +1,4 @@
-var demo = (function(){
+(function(){
 
     "use strict";
     
@@ -218,6 +218,7 @@ var demo = (function(){
                 */
             };
 
+            document.addEventListener('keydown', keydown, false);
             document.addEventListener('mousedown', shoot, false);
 
             ammoIncreaseInterval = setInterval(ammoIncreaseFunction, ammoIncreaseTimeInterval);
